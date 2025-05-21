@@ -1,15 +1,24 @@
-export const Hero = () => {
-  return (
-    <section className="pt-32 pb-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-      <div className="container mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">Your Powerful Solution</h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-          A modern platform designed to streamline your workflow.
-        </p>
-        <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-          Get Started
-        </button>
+// src/components/Hero.tsx
+export const Hero = () => (
+  <section className="w-full h-screen relative overflow-hidden flex items-center justify-center pt-16">
+    <video
+      className="absolute inset-0 w-full h-full object-cover"
+      src="/assets/images/UA_Theme_1_DT.mp4"
+      autoPlay
+      loop
+      muted
+      playsInline
+    />
+    <div className="absolute inset-0 bg-black/30"></div>
+    <div className="relative z-10 text-left px-4 md:px-8 w-full max-w-6xl">
+      <div className="text-white p-4 md:p-8">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2 leading-tight">
+          CHECK <br />
+          OUT OUR <br />
+          <span className="text-yellow-400">LATEST</span> <br />
+          GEAR
+        </h1>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);

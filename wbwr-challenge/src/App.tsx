@@ -1,22 +1,22 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { Features } from "./components/Features";
-import { VideoSection } from "./components/VideoSection";
-import { Testimonials } from "./components/Testimonials";
-import { Footer } from "./components/Footer";
-import "./App.css";
+import Features from "./components/Features";
+import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
-export default function App() {
+function App() {
   return (
-    <div className="font-sans">
+    <div>
       <Header />
-      <main>
-        <Hero />
-        <Features />
-        <VideoSection />
-        <Testimonials />
-      </main>
+      <main className="p-6">
+      <Hero />
+      <Features />
+      <Gallery />
       <Footer />
+      </main>
     </div>
+    
   );
 }
+
+export default App;
